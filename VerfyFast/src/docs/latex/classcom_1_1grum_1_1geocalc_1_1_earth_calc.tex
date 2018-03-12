@@ -1,0 +1,175 @@
+\hypertarget{classcom_1_1grum_1_1geocalc_1_1_earth_calc}{}\section{com.\+grum.\+geocalc.\+Earth\+Calc Class Reference}
+\label{classcom_1_1grum_1_1geocalc_1_1_earth_calc}\index{com.\+grum.\+geocalc.\+Earth\+Calc@{com.\+grum.\+geocalc.\+Earth\+Calc}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double \mbox{\hyperlink{classcom_1_1grum_1_1geocalc_1_1_earth_calc_acb9d37a15f23017544401934adc110cf}{get\+Distance}} (\mbox{\hyperlink{classcom_1_1grum_1_1geocalc_1_1_point}{Point}} stand\+Point, \mbox{\hyperlink{classcom_1_1grum_1_1geocalc_1_1_point}{Point}} fore\+Point)
+\item 
+static double \mbox{\hyperlink{classcom_1_1grum_1_1geocalc_1_1_earth_calc_a2ac0bcee0d65565480ff07854f1a98be}{get\+Harvesine\+Distance}} (\mbox{\hyperlink{classcom_1_1grum_1_1geocalc_1_1_point}{Point}} stand\+Point, \mbox{\hyperlink{classcom_1_1grum_1_1geocalc_1_1_point}{Point}} fore\+Point)
+\item 
+\mbox{\Hypertarget{classcom_1_1grum_1_1geocalc_1_1_earth_calc_a891264fbf72a7ddf02185fa86382417b}\label{classcom_1_1grum_1_1geocalc_1_1_earth_calc_a891264fbf72a7ddf02185fa86382417b}} 
+static double {\bfseries get\+Vincenty\+Distance} (\mbox{\hyperlink{classcom_1_1grum_1_1geocalc_1_1_point}{Point}} stand\+Point, \mbox{\hyperlink{classcom_1_1grum_1_1geocalc_1_1_point}{Point}} fore\+Point)
+\item 
+static double \mbox{\hyperlink{classcom_1_1grum_1_1geocalc_1_1_earth_calc_a2e7117867ddb60e6c1edd6b52b700c04}{get\+Vincenty\+Bearing}} (\mbox{\hyperlink{classcom_1_1grum_1_1geocalc_1_1_point}{Point}} stand\+Point, \mbox{\hyperlink{classcom_1_1grum_1_1geocalc_1_1_point}{Point}} fore\+Point)
+\item 
+static double \mbox{\hyperlink{classcom_1_1grum_1_1geocalc_1_1_earth_calc_a100d8071635948032b85483aeb2d3ff3}{get\+Vincenty\+Final\+Bearing}} (\mbox{\hyperlink{classcom_1_1grum_1_1geocalc_1_1_point}{Point}} stand\+Point, \mbox{\hyperlink{classcom_1_1grum_1_1geocalc_1_1_point}{Point}} fore\+Point)
+\item 
+static \mbox{\hyperlink{classcom_1_1grum_1_1geocalc_1_1_point}{Point}} \mbox{\hyperlink{classcom_1_1grum_1_1geocalc_1_1_earth_calc_a7c82be3d4244006e9b3f7a0c7f2b6be9}{point\+Radial\+Distance}} (\mbox{\hyperlink{classcom_1_1grum_1_1geocalc_1_1_point}{Point}} stand\+Point, double bearing, double distance)
+\item 
+static double \mbox{\hyperlink{classcom_1_1grum_1_1geocalc_1_1_earth_calc_a38a392d53524da1dfa433514bab6e04d}{get\+Bearing}} (\mbox{\hyperlink{classcom_1_1grum_1_1geocalc_1_1_point}{Point}} stand\+Point, \mbox{\hyperlink{classcom_1_1grum_1_1geocalc_1_1_point}{Point}} fore\+Point)
+\item 
+static \mbox{\hyperlink{classcom_1_1grum_1_1geocalc_1_1_bounding_area}{Bounding\+Area}} \mbox{\hyperlink{classcom_1_1grum_1_1geocalc_1_1_earth_calc_a0a74a2e87389d9c0358d0ea7c58951fb}{get\+Bounding\+Area}} (\mbox{\hyperlink{classcom_1_1grum_1_1geocalc_1_1_point}{Point}} stand\+Point, double distance)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1grum_1_1geocalc_1_1_earth_calc_a6ca0daf49bbbc9249d211b2053f5d7a6}\label{classcom_1_1grum_1_1geocalc_1_1_earth_calc_a6ca0daf49bbbc9249d211b2053f5d7a6}} 
+static final double {\bfseries E\+A\+R\+T\+H\+\_\+\+D\+I\+A\+M\+E\+T\+ER} = 6371.\+01 $\ast$ 1000
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Earth related calculations.
+
+\begin{DoxyAuthor}{Author}
+rgallet 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1grum_1_1geocalc_1_1_earth_calc_a38a392d53524da1dfa433514bab6e04d}\label{classcom_1_1grum_1_1geocalc_1_1_earth_calc_a38a392d53524da1dfa433514bab6e04d}} 
+\index{com\+::grum\+::geocalc\+::\+Earth\+Calc@{com\+::grum\+::geocalc\+::\+Earth\+Calc}!get\+Bearing@{get\+Bearing}}
+\index{get\+Bearing@{get\+Bearing}!com\+::grum\+::geocalc\+::\+Earth\+Calc@{com\+::grum\+::geocalc\+::\+Earth\+Calc}}
+\subsubsection{\texorpdfstring{get\+Bearing()}{getBearing()}}
+{\footnotesize\ttfamily static double com.\+grum.\+geocalc.\+Earth\+Calc.\+get\+Bearing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1grum_1_1geocalc_1_1_point}{Point}}}]{stand\+Point,  }\item[{\mbox{\hyperlink{classcom_1_1grum_1_1geocalc_1_1_point}{Point}}}]{fore\+Point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the (azimuth) bearing, in decimal degrees, from stand\+Point to fore\+Point
+
+
+\begin{DoxyParams}{Parameters}
+{\em stand\+Point} & Origin point \\
+\hline
+{\em fore\+Point} & Destination point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(azimuth) bearing, in decimal degrees 
+\end{DoxyReturn}
+Formula\+: θ = atan2( sin(Δlong).cos(lat2), cos(lat1).sin(lat2) − sin(lat1).cos(lat2).cos(Δlong) )\mbox{\Hypertarget{classcom_1_1grum_1_1geocalc_1_1_earth_calc_a0a74a2e87389d9c0358d0ea7c58951fb}\label{classcom_1_1grum_1_1geocalc_1_1_earth_calc_a0a74a2e87389d9c0358d0ea7c58951fb}} 
+\index{com\+::grum\+::geocalc\+::\+Earth\+Calc@{com\+::grum\+::geocalc\+::\+Earth\+Calc}!get\+Bounding\+Area@{get\+Bounding\+Area}}
+\index{get\+Bounding\+Area@{get\+Bounding\+Area}!com\+::grum\+::geocalc\+::\+Earth\+Calc@{com\+::grum\+::geocalc\+::\+Earth\+Calc}}
+\subsubsection{\texorpdfstring{get\+Bounding\+Area()}{getBoundingArea()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcom_1_1grum_1_1geocalc_1_1_bounding_area}{Bounding\+Area}} com.\+grum.\+geocalc.\+Earth\+Calc.\+get\+Bounding\+Area (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1grum_1_1geocalc_1_1_point}{Point}}}]{stand\+Point,  }\item[{double}]{distance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns an area around stand\+Point
+
+
+\begin{DoxyParams}{Parameters}
+{\em stand\+Point} & The centre of the area \\
+\hline
+{\em distance} & Distance around stand\+Point, im meters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The area
+\end{DoxyReturn}
+\mbox{\hyperlink{}{http\+://www.\+movable-\/type.\+co.\+uk/scripts/latlong.\+html}}\mbox{\Hypertarget{classcom_1_1grum_1_1geocalc_1_1_earth_calc_acb9d37a15f23017544401934adc110cf}\label{classcom_1_1grum_1_1geocalc_1_1_earth_calc_acb9d37a15f23017544401934adc110cf}} 
+\index{com\+::grum\+::geocalc\+::\+Earth\+Calc@{com\+::grum\+::geocalc\+::\+Earth\+Calc}!get\+Distance@{get\+Distance}}
+\index{get\+Distance@{get\+Distance}!com\+::grum\+::geocalc\+::\+Earth\+Calc@{com\+::grum\+::geocalc\+::\+Earth\+Calc}}
+\subsubsection{\texorpdfstring{get\+Distance()}{getDistance()}}
+{\footnotesize\ttfamily static double com.\+grum.\+geocalc.\+Earth\+Calc.\+get\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1grum_1_1geocalc_1_1_point}{Point}}}]{stand\+Point,  }\item[{\mbox{\hyperlink{classcom_1_1grum_1_1geocalc_1_1_point}{Point}}}]{fore\+Point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the distance between two points using spherical law of cosines.
+
+
+\begin{DoxyParams}{Parameters}
+{\em stand\+Point} & The stand point \\
+\hline
+{\em fore\+Point} & The fore point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The distance, in meters 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1grum_1_1geocalc_1_1_earth_calc_a2ac0bcee0d65565480ff07854f1a98be}\label{classcom_1_1grum_1_1geocalc_1_1_earth_calc_a2ac0bcee0d65565480ff07854f1a98be}} 
+\index{com\+::grum\+::geocalc\+::\+Earth\+Calc@{com\+::grum\+::geocalc\+::\+Earth\+Calc}!get\+Harvesine\+Distance@{get\+Harvesine\+Distance}}
+\index{get\+Harvesine\+Distance@{get\+Harvesine\+Distance}!com\+::grum\+::geocalc\+::\+Earth\+Calc@{com\+::grum\+::geocalc\+::\+Earth\+Calc}}
+\subsubsection{\texorpdfstring{get\+Harvesine\+Distance()}{getHarvesineDistance()}}
+{\footnotesize\ttfamily static double com.\+grum.\+geocalc.\+Earth\+Calc.\+get\+Harvesine\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1grum_1_1geocalc_1_1_point}{Point}}}]{stand\+Point,  }\item[{\mbox{\hyperlink{classcom_1_1grum_1_1geocalc_1_1_point}{Point}}}]{fore\+Point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the distance between two points using Harvesine formula.
+
+
+\begin{DoxyParams}{Parameters}
+{\em stand\+Point} & The stand point \\
+\hline
+{\em fore\+Point} & The fore point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The distance, in meters 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1grum_1_1geocalc_1_1_earth_calc_a2e7117867ddb60e6c1edd6b52b700c04}\label{classcom_1_1grum_1_1geocalc_1_1_earth_calc_a2e7117867ddb60e6c1edd6b52b700c04}} 
+\index{com\+::grum\+::geocalc\+::\+Earth\+Calc@{com\+::grum\+::geocalc\+::\+Earth\+Calc}!get\+Vincenty\+Bearing@{get\+Vincenty\+Bearing}}
+\index{get\+Vincenty\+Bearing@{get\+Vincenty\+Bearing}!com\+::grum\+::geocalc\+::\+Earth\+Calc@{com\+::grum\+::geocalc\+::\+Earth\+Calc}}
+\subsubsection{\texorpdfstring{get\+Vincenty\+Bearing()}{getVincentyBearing()}}
+{\footnotesize\ttfamily static double com.\+grum.\+geocalc.\+Earth\+Calc.\+get\+Vincenty\+Bearing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1grum_1_1geocalc_1_1_point}{Point}}}]{stand\+Point,  }\item[{\mbox{\hyperlink{classcom_1_1grum_1_1geocalc_1_1_point}{Point}}}]{fore\+Point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns (azimuth) bearing using Vincenty formula.
+
+
+\begin{DoxyParams}{Parameters}
+{\em stand\+Point} & The stand point \\
+\hline
+{\em fore\+Point} & The fore point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(azimuth) bearing in degrees to the North
+\end{DoxyReturn}
+\mbox{\hyperlink{}{http\+://www.\+movable-\/type.\+co.\+uk/scripts/latlong.\+html}}\mbox{\Hypertarget{classcom_1_1grum_1_1geocalc_1_1_earth_calc_a100d8071635948032b85483aeb2d3ff3}\label{classcom_1_1grum_1_1geocalc_1_1_earth_calc_a100d8071635948032b85483aeb2d3ff3}} 
+\index{com\+::grum\+::geocalc\+::\+Earth\+Calc@{com\+::grum\+::geocalc\+::\+Earth\+Calc}!get\+Vincenty\+Final\+Bearing@{get\+Vincenty\+Final\+Bearing}}
+\index{get\+Vincenty\+Final\+Bearing@{get\+Vincenty\+Final\+Bearing}!com\+::grum\+::geocalc\+::\+Earth\+Calc@{com\+::grum\+::geocalc\+::\+Earth\+Calc}}
+\subsubsection{\texorpdfstring{get\+Vincenty\+Final\+Bearing()}{getVincentyFinalBearing()}}
+{\footnotesize\ttfamily static double com.\+grum.\+geocalc.\+Earth\+Calc.\+get\+Vincenty\+Final\+Bearing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1grum_1_1geocalc_1_1_point}{Point}}}]{stand\+Point,  }\item[{\mbox{\hyperlink{classcom_1_1grum_1_1geocalc_1_1_point}{Point}}}]{fore\+Point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns final bearing in direction of stand\+Point→fore\+Point using Vincenty formula.
+
+
+\begin{DoxyParams}{Parameters}
+{\em stand\+Point} & The stand point \\
+\hline
+{\em fore\+Point} & The fore point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(azimuth) bearing in degrees to the North
+\end{DoxyReturn}
+\mbox{\hyperlink{}{http\+://www.\+movable-\/type.\+co.\+uk/scripts/latlong.\+html}}\mbox{\Hypertarget{classcom_1_1grum_1_1geocalc_1_1_earth_calc_a7c82be3d4244006e9b3f7a0c7f2b6be9}\label{classcom_1_1grum_1_1geocalc_1_1_earth_calc_a7c82be3d4244006e9b3f7a0c7f2b6be9}} 
+\index{com\+::grum\+::geocalc\+::\+Earth\+Calc@{com\+::grum\+::geocalc\+::\+Earth\+Calc}!point\+Radial\+Distance@{point\+Radial\+Distance}}
+\index{point\+Radial\+Distance@{point\+Radial\+Distance}!com\+::grum\+::geocalc\+::\+Earth\+Calc@{com\+::grum\+::geocalc\+::\+Earth\+Calc}}
+\subsubsection{\texorpdfstring{point\+Radial\+Distance()}{pointRadialDistance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcom_1_1grum_1_1geocalc_1_1_point}{Point}} com.\+grum.\+geocalc.\+Earth\+Calc.\+point\+Radial\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1grum_1_1geocalc_1_1_point}{Point}}}]{stand\+Point,  }\item[{double}]{bearing,  }\item[{double}]{distance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the coordinates of a point which is \char`\"{}distance\char`\"{} away from stand\+Point in the direction of \char`\"{}bearing\char`\"{} 
+
+Note\+: North is equal to 0 for bearing value
+
+
+\begin{DoxyParams}{Parameters}
+{\em stand\+Point} & Origin \\
+\hline
+{\em bearing} & Direction in degrees \\
+\hline
+{\em distance} & distance in meters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+fore\+Point coordinates
+\end{DoxyReturn}
+\mbox{\hyperlink{}{http\+://www.\+movable-\/type.\+co.\+uk/scripts/latlong.\+html}}~\newline
+var φ2 = asin( sin(φ1)$\ast$cos(d/R) + cos(φ1)$\ast$sin(d/R)$\ast$cos(brng) ); var λ2 = λ1 + atan2(sin(brng)$\ast$sin(d/R)$\ast$cos(φ1), cos(d/R)-\/sin(φ1)$\ast$sin(φ2));
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+Git\+Hub/vertify\+Sergey\+Staroletov/\+Verfy\+Fast/src/main/java/com/grum/geocalc/Earth\+Calc.\+java\end{DoxyCompactItemize}

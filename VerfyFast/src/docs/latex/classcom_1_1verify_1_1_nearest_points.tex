@@ -1,0 +1,137 @@
+\hypertarget{classcom_1_1verify_1_1_nearest_points}{}\section{com.\+verify.\+Nearest\+Points Class Reference}
+\label{classcom_1_1verify_1_1_nearest_points}\index{com.\+verify.\+Nearest\+Points@{com.\+verify.\+Nearest\+Points}}
+
+
+Основной класс проекта  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classcom_1_1verify_1_1_nearest_points_1_1_position}{Position}}
+\begin{DoxyCompactList}\small\item\em Вспомогательный класс \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1verify_1_1_nearest_points_a8abfa963cd283906b73b2f01bb7d6ab0}\label{classcom_1_1verify_1_1_nearest_points_a8abfa963cd283906b73b2f01bb7d6ab0}} 
+\mbox{\hyperlink{classcom_1_1verify_1_1_nearest_points_a8abfa963cd283906b73b2f01bb7d6ab0}{Nearest\+Points}} ()
+\begin{DoxyCompactList}\small\item\em конструктор по умолчанию \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcom_1_1verify_1_1_nearest_points_ad89051cbce423dbe3599bd7a91f9589c}{Nearest\+Points}} (int \mbox{\hyperlink{classcom_1_1verify_1_1_nearest_points_accea8abe3aba66b446543f4596c7ffbf}{radius}})
+\item 
+boolean \mbox{\hyperlink{classcom_1_1verify_1_1_nearest_points_a3252dc1f231e0925565d515194280a63}{add\+Point}} (Long id, double x, double y)
+\item 
+boolean \mbox{\hyperlink{classcom_1_1verify_1_1_nearest_points_a2065ad3d160bc5b2a3c39ae64654fdb1}{move\+Point}} (Long id, double x, double y)
+\item 
+boolean \mbox{\hyperlink{classcom_1_1verify_1_1_nearest_points_ac5df1fd537e20415a4e5a43da23dfac7}{delete\+Point}} (Long id)
+\item 
+Json\+Array \mbox{\hyperlink{classcom_1_1verify_1_1_nearest_points_aa7923777c1b183a83b248767655720e4}{get\+Closest\+Points}} (Long id)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1verify_1_1_nearest_points_af568d2e2106e5d2e47bc3f06aa0183bc}\label{classcom_1_1verify_1_1_nearest_points_af568d2e2106e5d2e47bc3f06aa0183bc}} 
+int {\bfseries get\+Map\+Coordinate} (double value)  throws Index\+Out\+Of\+Bounds\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1verify_1_1_nearest_points_a108714a02fead442c986fb0fb8f273d3}\label{classcom_1_1verify_1_1_nearest_points_a108714a02fead442c986fb0fb8f273d3}} 
+boolean {\bfseries check\+Degrees} (double value)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1verify_1_1_nearest_points_ae28c825a69910065f6588070c7c23ca0}\label{classcom_1_1verify_1_1_nearest_points_ae28c825a69910065f6588070c7c23ca0}} 
+Hash\+Map$<$ Long, Point $>$ \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1verify_1_1_nearest_points_ae28c825a69910065f6588070c7c23ca0}{map}}
+\begin{DoxyCompactList}\small\item\em деревья, хранящие сохраненные точки \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcom_1_1verify_1_1_nearest_points_a0ac03be6036b10e296fa3adb5a2954c5}\label{classcom_1_1verify_1_1_nearest_points_a0ac03be6036b10e296fa3adb5a2954c5}} 
+Hash\+Map$<$ Long, \mbox{\hyperlink{classcom_1_1verify_1_1_nearest_points_1_1_position}{Position}} $>$ \mbox{\hyperlink{classcom_1_1verify_1_1_nearest_points_a0ac03be6036b10e296fa3adb5a2954c5}{positions}}
+\begin{DoxyCompactList}\small\item\em хранит, в каком дереве сейчас лежит текущий элемент \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcom_1_1verify_1_1_nearest_points_a60ff1851e20c3975043a3f4891c44bf1}\label{classcom_1_1verify_1_1_nearest_points_a60ff1851e20c3975043a3f4891c44bf1}} 
+final int \mbox{\hyperlink{classcom_1_1verify_1_1_nearest_points_a60ff1851e20c3975043a3f4891c44bf1}{N}} = 400
+\begin{DoxyCompactList}\small\item\em размерность разбиения координат \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcom_1_1verify_1_1_nearest_points_accea8abe3aba66b446543f4596c7ffbf}\label{classcom_1_1verify_1_1_nearest_points_accea8abe3aba66b446543f4596c7ffbf}} 
+final int \mbox{\hyperlink{classcom_1_1verify_1_1_nearest_points_accea8abe3aba66b446543f4596c7ffbf}{radius}}
+\begin{DoxyCompactList}\small\item\em радиус, в котором будем производить поиск \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Основной класс проекта 
+
+\begin{DoxyAuthor}{Author}
+Artem Fast 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+Класс, реализующий хранение множества точек и быстрый поиск ближайших точек в пределах заданного радиуса 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1verify_1_1_nearest_points_ad89051cbce423dbe3599bd7a91f9589c}\label{classcom_1_1verify_1_1_nearest_points_ad89051cbce423dbe3599bd7a91f9589c}} 
+\index{com\+::verify\+::\+Nearest\+Points@{com\+::verify\+::\+Nearest\+Points}!Nearest\+Points@{Nearest\+Points}}
+\index{Nearest\+Points@{Nearest\+Points}!com\+::verify\+::\+Nearest\+Points@{com\+::verify\+::\+Nearest\+Points}}
+\subsubsection{\texorpdfstring{Nearest\+Points()}{NearestPoints()}}
+{\footnotesize\ttfamily com.\+verify.\+Nearest\+Points.\+Nearest\+Points (\begin{DoxyParamCaption}\item[{int}]{radius }\end{DoxyParamCaption})}
+
+Базовый конструктор класса 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em radius} & радиус, в котором будем производить поиск \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1verify_1_1_nearest_points_a3252dc1f231e0925565d515194280a63}\label{classcom_1_1verify_1_1_nearest_points_a3252dc1f231e0925565d515194280a63}} 
+\index{com\+::verify\+::\+Nearest\+Points@{com\+::verify\+::\+Nearest\+Points}!add\+Point@{add\+Point}}
+\index{add\+Point@{add\+Point}!com\+::verify\+::\+Nearest\+Points@{com\+::verify\+::\+Nearest\+Points}}
+\subsubsection{\texorpdfstring{add\+Point()}{addPoint()}}
+{\footnotesize\ttfamily boolean com.\+verify.\+Nearest\+Points.\+add\+Point (\begin{DoxyParamCaption}\item[{Long}]{id,  }\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})}
+
+Добавление точки 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em id} & уникальный id точки \\
+\hline
+\mbox{\tt in}  & {\em x} & x-\/координата точки \\
+\hline
+\mbox{\tt in}  & {\em y} & y-\/координата точки \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1verify_1_1_nearest_points_ac5df1fd537e20415a4e5a43da23dfac7}\label{classcom_1_1verify_1_1_nearest_points_ac5df1fd537e20415a4e5a43da23dfac7}} 
+\index{com\+::verify\+::\+Nearest\+Points@{com\+::verify\+::\+Nearest\+Points}!delete\+Point@{delete\+Point}}
+\index{delete\+Point@{delete\+Point}!com\+::verify\+::\+Nearest\+Points@{com\+::verify\+::\+Nearest\+Points}}
+\subsubsection{\texorpdfstring{delete\+Point()}{deletePoint()}}
+{\footnotesize\ttfamily boolean com.\+verify.\+Nearest\+Points.\+delete\+Point (\begin{DoxyParamCaption}\item[{Long}]{id }\end{DoxyParamCaption})}
+
+Удаление точки 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em id} & уникальный id точки \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1verify_1_1_nearest_points_aa7923777c1b183a83b248767655720e4}\label{classcom_1_1verify_1_1_nearest_points_aa7923777c1b183a83b248767655720e4}} 
+\index{com\+::verify\+::\+Nearest\+Points@{com\+::verify\+::\+Nearest\+Points}!get\+Closest\+Points@{get\+Closest\+Points}}
+\index{get\+Closest\+Points@{get\+Closest\+Points}!com\+::verify\+::\+Nearest\+Points@{com\+::verify\+::\+Nearest\+Points}}
+\subsubsection{\texorpdfstring{get\+Closest\+Points()}{getClosestPoints()}}
+{\footnotesize\ttfamily Json\+Array com.\+verify.\+Nearest\+Points.\+get\+Closest\+Points (\begin{DoxyParamCaption}\item[{Long}]{id }\end{DoxyParamCaption})}
+
+Поиск всех ближайших точек в пределах заданного радиуса 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em id} & уникальный id точки \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1verify_1_1_nearest_points_a2065ad3d160bc5b2a3c39ae64654fdb1}\label{classcom_1_1verify_1_1_nearest_points_a2065ad3d160bc5b2a3c39ae64654fdb1}} 
+\index{com\+::verify\+::\+Nearest\+Points@{com\+::verify\+::\+Nearest\+Points}!move\+Point@{move\+Point}}
+\index{move\+Point@{move\+Point}!com\+::verify\+::\+Nearest\+Points@{com\+::verify\+::\+Nearest\+Points}}
+\subsubsection{\texorpdfstring{move\+Point()}{movePoint()}}
+{\footnotesize\ttfamily boolean com.\+verify.\+Nearest\+Points.\+move\+Point (\begin{DoxyParamCaption}\item[{Long}]{id,  }\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})}
+
+Изменение координат точки 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em id} & уникальный id точки \\
+\hline
+\mbox{\tt in}  & {\em x} & x-\/координата точки \\
+\hline
+\mbox{\tt in}  & {\em y} & y-\/координата точки \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+Git\+Hub/vertify\+Sergey\+Staroletov/\+Verfy\+Fast/src/main/java/com/verify/Nearest\+Points.\+java\end{DoxyCompactItemize}
