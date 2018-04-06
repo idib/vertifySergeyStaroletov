@@ -200,7 +200,7 @@ public class NearestPoints {
     }
 
     // Грубая проверка, что координата в градусах лежит в пределах [-180, 180]
-    protected boolean checkDegrees(double value) {
+    public boolean checkDegrees(double value) {
         return !(value < -180 - 0.01 || value > 180 + 0.01);
     }
 }
