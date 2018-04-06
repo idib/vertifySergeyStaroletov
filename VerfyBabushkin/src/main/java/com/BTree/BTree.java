@@ -10,12 +10,17 @@ import java.util.ArrayList;
  * @param <V> значение
  */
 public class BTree<K extends Comparable<K>, V> {
-	public Node<K, V> Root;
+	private Node<K, V> Root;
 	private int T = 4;
 	private double sX;
 	private double sY;
 	private double distX = 45;
 	private double distY = 45;
+	private int size = 0;
+
+	public int getSize() {
+		return size;
+	}
 
 	/**
 	 * Конструктор дерева.
@@ -105,6 +110,7 @@ public class BTree<K extends Comparable<K>, V> {
 		if (cur != null) {
 			cur.setValue(val);
 		} else {
+			size++;
 			Node<K, V> r = Root;
 			if (r.Count == 2 * T - 1) {
 				Node<K, V> s = new Node<K, V>(T);
@@ -204,8 +210,10 @@ public class BTree<K extends Comparable<K>, V> {
 	 * @param key удаляемый ключ
 	 */
 	public void del(K key) {
-		if (search(Root, key) != null)
+		if (search(Root, key) != null) {
 			delete(Root, key);
+			size--;
+		}
 	}
 
 	/**
